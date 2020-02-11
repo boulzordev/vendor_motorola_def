@@ -22,8 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/def/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/motorola/def/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/motorola/def/proprietary/etc/NT36xxx_MP_Setting_Criteria_6016.csv:$(TARGET_COPY_OUT_SYSTEM)/etc/NT36xxx_MP_Setting_Criteria_6016.csv \
-    vendor/motorola/def/proprietary/etc/bluetooth/bt_profile.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_profile.conf \
-    vendor/motorola/def/proprietary/etc/bluetooth/interop_database.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/interop_database.conf \
     vendor/motorola/def/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/motorola/def/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/motorola/def/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
@@ -331,13 +329,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/def/proprietary/usr/keylayout/uinput-egis.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-egis.kl
 
 PRODUCT_PACKAGES += \
-    MotCamera2AI \
-    MotoLiveWallpaper \
-    MotoPhotoEditor \
+    MotoDolbyV3 \
     MotoSignatureApp \
     AttPhoneExt \
     DMService \
-    CACertService \
     HotwordEnrollmentOKGoogleCS47L35 \
     HotwordEnrollmentTGoogleCS47L35 \
     HotwordEnrollmentXGoogleCS47L35 \
@@ -421,7 +416,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/def/proprietary/product/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureui_svcsock_system.so \
     vendor/motorola/def/proprietary/product/lib/libstfactory.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libstfactory.so \
     vendor/motorola/def/proprietary/product/lib/libstnfc-nci.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libstnfc-nci.so \
-    vendor/motorola/def/proprietary/product/lib64/libstnfc-nci.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libstnfc-nci.so \
     vendor/motorola/def/proprietary/product/lib/libstnfc_nci_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libstnfc_nci_jni.so \
     vendor/motorola/def/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
     vendor/motorola/def/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
@@ -533,6 +527,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/def/proprietary/product/lib64/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnfc_st_dta_jni.so \
     vendor/motorola/def/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/motorola/def/proprietary/product/lib64/libstfactory.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libstfactory.so \
+    vendor/motorola/def/proprietary/product/lib64/libstnfc-nci.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libstnfc-nci.so \
     vendor/motorola/def/proprietary/product/lib64/libstnfc_nci_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libstnfc_nci_jni.so \
     vendor/motorola/def/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/motorola/def/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
@@ -627,9 +622,9 @@ PRODUCT_PACKAGES += \
     uceShimService \
     uimgbaservice \
     uimlpaservice \
-    ImagerTuning \
     VzwDM \
     atfwd \
+    daxService \
     ims \
     qcrilmsgtunnel \
     vzwPcoExt \
